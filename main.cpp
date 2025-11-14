@@ -1,5 +1,5 @@
 #include <iostream>
 
 void main(){
-      std::cout << "moon" << std::endl;
+      std::cout << "sun" << std::endl;
 }
