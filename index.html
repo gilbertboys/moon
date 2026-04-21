@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>jake munly website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jakemunly</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <h1>welcome to my site</h1>
+  <main class="page-shell">
+    <section class="intro" aria-label="Introduction">
+      <div class="intro-text">
+        <p>Hey! My name is Jacob Munly, I'm currently a third year student at Oregon State University studying computer science.</p>
+        <p class="intro-label">Goals for this website:</p>
+        <ul>
+          <li>Showcase my portfolio/computer science skills</li>
+          <li>Give visitors an idea of who I am</li>
+          <li>Provide an interactive and fun experience for people who click this link from my resume</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <h1 id="projects-title">Things I've Built</h1>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h2>Text Based Platforming Game: Textplorer</h2>
+          <p>A text-driven platforming project that mixes movement, puzzles, and a playful web experience.</p>
+          <a href="https://textplorer-8e49754395e3.herokuapp.com/" target="_blank" rel="noreferrer">Visit project</a>
+        </article>
+
+        <article class="project-card">
+          <h2>Restaurant Website (WIP)</h2>
+          <p>A work-in-progress restaurant site focused on layout, polish, and a clean visitor experience.</p>
+          <a href="https://web.engr.oregonstate.edu/~munlyj/cs290/hw2" target="_blank" rel="noreferrer">Visit project</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made by Jacob Munly. Contact me at <a href="mailto:jakemunly@gmail.com">jakemunly@gmail.com</a>.</p>
+  </footer>
 </body>
 </html>
