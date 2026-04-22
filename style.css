@@ -4,15 +4,13 @@
 
 :root {
 	color-scheme: light;
-	--bg: #f3efe7;
-	--bg-alt: #e6f0ed;
-	--surface: rgba(255, 255, 255, 0.76);
-	--surface-border: rgba(43, 58, 54, 0.12);
+	--bg: #f7f4ec;
+	--surface: #ffffff;
+	--surface-border: #d9d2c3;
 	--text: #1f2a28;
-	--muted: #55625f;
-	--accent: #0f766e;
-	--accent-strong: #124e4a;
-	--shadow: 0 18px 45px rgba(31, 42, 40, 0.12);
+	--muted: #4f5c58;
+	--accent: #2f6f66;
+	--accent-strong: #25554f;
 }
 
 html {
@@ -23,21 +21,8 @@ body {
 	margin: 0;
 	min-height: 100vh;
 	color: var(--text);
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	background:
-		radial-gradient(circle at top left, rgba(15, 118, 110, 0.18), transparent 34%),
-		radial-gradient(circle at bottom right, rgba(233, 159, 87, 0.16), transparent 28%),
-		linear-gradient(135deg, var(--bg), var(--bg-alt));
-}
-
-body::before {
-	content: "";
-	position: fixed;
-	inset: 0;
-	pointer-events: none;
-	background-image: linear-gradient(rgba(31, 42, 40, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(31, 42, 40, 0.03) 1px, transparent 1px);
-	background-size: 42px 42px;
-	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent 70%);
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: var(--bg);
 }
 
 a {
@@ -53,7 +38,7 @@ a:hover {
 .page-shell {
 	width: min(1040px, calc(100% - 32px));
 	margin: 0 auto;
-	padding: 28px 0 20px;
+	padding: 24px 0 20px;
 }
 
 .intro {
@@ -68,9 +53,8 @@ a:hover {
 	margin: 0;
 	padding: 18px 20px;
 	border: 1px solid var(--surface-border);
-	border-radius: 20px;
+	border-radius: 8px;
 	background: var(--surface);
-	box-shadow: var(--shadow);
 	font-size: clamp(1rem, 1vw + 0.95rem, 1.3rem);
 	line-height: 1.7;
 }
@@ -112,7 +96,7 @@ a:hover {
 
 .section-heading h1 {
 	margin: 0;
-	font-size: clamp(2rem, 3vw + 1rem, 3.6rem);
+	font-size: clamp(1.9rem, 3vw + 1rem, 3.2rem);
 	line-height: 1.05;
 }
 
@@ -125,10 +109,8 @@ a:hover {
 .project-card {
 	padding: 22px;
 	border: 1px solid var(--surface-border);
-	border-radius: 22px;
-	background: rgba(255, 255, 255, 0.74);
-	box-shadow: var(--shadow);
-	backdrop-filter: blur(10px);
+	border-radius: 8px;
+	background: var(--surface);
 }
 
 .project-card h2 {
@@ -143,12 +125,11 @@ a:hover {
 }
 
 .project-card a {
-	display: inline-flex;
-	align-items: center;
-	gap: 0.45rem;
-	padding: 0.8rem 1rem;
-	border-radius: 999px;
-	background: rgba(15, 118, 110, 0.1);
+	display: inline-block;
+	padding: 0.55rem 0.85rem;
+	border: 1px solid #bfcfc9;
+	border-radius: 6px;
+	background: #eef5f2;
 	font-weight: 700;
 	text-decoration: none;
 }
