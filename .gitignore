@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build and cache outputs
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+.turbo/
+.next/
+out/
+
+# Package manager / tooling state
+.npm/
+.pnpm-store/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Runtime files
+*.pid
+*.pid.lock
+
+# Common compiled artifacts
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
